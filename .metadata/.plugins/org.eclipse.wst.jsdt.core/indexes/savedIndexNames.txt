@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+D:\WORK\SPRING-HIBERNATE\eclipse-jee-oxygen-2-win32-x86_64\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2437989212.index
+484977409.index
+1647916954.index
+237508677.index
+3877400330.index
+3617312122.index
+1420059674.index
+361139314.index

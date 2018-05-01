@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Apr 18 00:54:03 CDT 2018
+org.eclipse.jst.jee.server\:/binary\:D\:\\WORK\\SPRING-HIBERNATE\\eclipse-jee-oxygen-2-win32-x86_64\\workspace\\spring-mvc-demo\\WebContent\\WEB-INF\\lib\\spring-web-5.0.4.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.0.4.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\WORK\\SPRING-HIBERNATE\\eclipse-jee-oxygen-2-win32-x86_64\\workspace\\spring-mvc-demo\\WebContent\\WEB-INF\\lib\\spring-web-5.0.4.RELEASE.jar=WEB-INF/lib/spring-web-5.0.4.RELEASE.jar

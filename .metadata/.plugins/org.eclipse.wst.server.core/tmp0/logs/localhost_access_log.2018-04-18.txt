@@ -1,0 +1,11 @@
+127.0.0.1 - - [18/Apr/2018:00:43:26 -0500] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:43:48 -0500] "GET /robots.txt HTTP/1.1" 404 1083
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:43:48 -0500] "GET /spring-mvc-demo/ HTTP/1.1" 200 403
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:43:49 -0500] "GET /favicon.ico HTTP/1.1" 404 1084
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:43:53 -0500] "GET /spring-mvc-demo/customer/showForm HTTP/1.1" 200 524
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:44:04 -0500] "POST /spring-mvc-demo/customer/processForm HTTP/1.1" 200 166
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:44:22 -0500] "POST /spring-mvc-demo/customer/processForm HTTP/1.1" 200 619
+127.0.0.1 - - [18/Apr/2018:00:51:25 -0500] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:52:07 -0500] "GET /spring-mvc-demo/customer/showForm HTTP/1.1" 200 621
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:52:18 -0500] "POST /spring-mvc-demo/customer/processForm HTTP/1.1" 200 713
+0:0:0:0:0:0:0:1 - - [18/Apr/2018:00:52:27 -0500] "POST /spring-mvc-demo/customer/processForm HTTP/1.1" 200 164
