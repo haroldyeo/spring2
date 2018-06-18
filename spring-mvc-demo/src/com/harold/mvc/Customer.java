@@ -4,6 +4,9 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+import com.harold.validation.CourseCode;
 
 public class Customer {
 	
@@ -14,8 +17,28 @@ public class Customer {
 	
 	@Min(value=0)
 	@Max(value=10)
+	@NotNull
 	private int freePasses;
 	
+	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="Only 5 characters / digits")
+	private String postalCode;
+	
+	@CourseCode(value="HOLA", message="Must strat with HOLA")
+	private String courseCode;
+	
+			
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
+	public String getPostalCode() {
+		return postalCode;
+	}
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
