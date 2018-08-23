@@ -15,7 +15,7 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<!-- Add support for component scanning -->
-	<context:component-scan base-package="com.harold.springdemo" />
+	<context:component-scan base-package="com.harold.springdemo.*" />
 
 	<!-- Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
@@ -31,7 +31,7 @@
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/web_customer_tracker?useSSl=false" />
         <property name="user" value="springstudent" />
         <property name="password" value="springstudent" /> 
 
@@ -45,7 +45,7 @@
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="myDataSource" />
-		<property name="packagesToScan" value="com.luv2code.springdemo.entity" />
+		<property name="packagesToScan" value="com.harold.springdemo.entity" />
 		<property name="hibernateProperties">
 		   <props>
 		      <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
@@ -62,6 +62,9 @@
     
     <!-- Step 4: Enable configuration of transactional behavior based on annotations -->
 	<tx:annotation-driven transaction-manager="myTransactionManager" />
+	
+	<!-- Resources -->
+	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 
 </beans>
 
