@@ -1,4 +1,4 @@
-package com.harold.aop.demo;
+package com.harold.aopdemo;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

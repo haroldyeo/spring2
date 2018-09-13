@@ -3,38 +3,17 @@ package com.harold.aopdemo.aspect;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
+@Order(3)
 public class MyDemoLoggingAspect {
 	
-	
-	@Pointcut("execution(* com.harold.aopdemo.dao.*.*(..))")  
-	public void forDaoPackage() {}
-	
-	@Pointcut("execution(* com.harold.aopdemo.dao.*.get*(..))")  
-	public void getter() {}
-	
-	@Pointcut("execution(* com.harold.aopdemo.dao.*.set*(..))")  
-	public void setter() {}
-	
-	@Pointcut("forDaoPackage() && !(getter() || setter())")  
-	public void excludeGettersAndSetters() {}
-	
-	@Before("excludeGettersAndSetters()") 
+	@Before("com.harold.aopdemo.aspect.HaroldAopExpressions.excludeGettersAndSetters()") 
 	public void beforeAddAccount() {		
 		System.out.println("#######  BEFORE Aspect call  ################  ");
-	}
-	
-	@Before("excludeGettersAndSetters()") 
-	public void logAnalytics() {		
-		System.out.println("#######  Log analytics  ################  ");
-	}
-	
-	@Before("excludeGettersAndSetters()") 
-	public void logToAsync() {		
-		System.out.println("#######  The Cloud one  ################  ");
 	}
 	
 
